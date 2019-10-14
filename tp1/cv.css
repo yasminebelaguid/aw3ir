@@ -1,0 +1,75 @@
+
+#yas {
+  background-color: rgba(255, 255, 128, .5);
+}
+
+#id {
+  color: black;
+  text-align: center;
+
+}
+
+
+h1 {
+  color: red;
+  text-align: left;
+  font-family: Georgia;
+  font-size: 20px;
+}
+
+
+
+
+a:hover {
+  
+  background-color: gold;
+  
+}
+
+
+table {
+  font-size: .8em;
+  margin: 0 auto;
+  width: 96%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  border-style: inset;
+  border-width:3px;
+ 
+ 
+}
+
+tr:hover {
+ background-color: red;
+
+}
+
+tr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #DCDCDC;
+  color: black;
+}
+
+tr:nth-child(2n):hover {
+  background-color: red;
+  
+}
+
+tr:nth-child(2n) {
+
+  background-color: #F5F5F5;
+}
+
+img {
+ 
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
