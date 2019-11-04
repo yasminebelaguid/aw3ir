@@ -36,11 +36,8 @@
     width: 254px;
   }
    
-  input[type=checkbox] {
-    width: 10px;
-  }
-   
-  input[type=submit] {
+
+  input[type=button] {
     width: 150px;
     padding: 10px;
   }
