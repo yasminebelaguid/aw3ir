@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 function validation() {
@@ -11,23 +10,22 @@ function validation() {
 
 
 
-
-    if (document.getElementById("nom").value.length < 5) 
+    if (document.getElementById("nom").value.length < 5 || document.getElementById("nom").value == "") 
      
 	text = "Nom";
     
   
-     if (document.getElementById("prenom").value.length < 5) 
+     if (document.getElementById("prenom").value.length < 5 || document.getElementById("prenom").value == "") 
    
 	text = text + ", Prénom";
 	
 
-     if (document.getElementById("add").value.length < 5) 
+     if (document.getElementById("add").value.length < 5 || document.getElementById("add").value == "") 
    
 	text = text + ", Adresse";
 	
 
-     if (document.getElementById("email").value.length < 5) 
+     if (document.getElementById("email").value.length < 5 || document.getElementById("email").value == "") 
       
 	text = text + ", Email";
 
@@ -54,18 +52,3 @@ else
 
 
 }
-=======
-<script>
-
-function Validation() {
-
-  if (document.getElementById("nom").value.length == 3)
-     
-    document.getElementById("error").innerHTML = "La saisie du nom est obligatoire";
-    document.getElementById("resultat").innerHTML = "Bienvenue " + document.querySelector("#nom").value;
-     
-  
-}
-
-</script>
->>>>>>> 72c2afd535a56781dfa5681555ab5575bd783de1

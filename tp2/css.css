@@ -37,20 +37,16 @@
   }
    
 
-<<<<<<< HEAD
+
   input[type=submit] {
-=======
-  input[type=button] {
->>>>>>> 72c2afd535a56781dfa5681555ab5575bd783de1
+
     width: 150px;
     padding: 10px;
   }
 
-<<<<<<< HEAD
-  #error {
-=======
-  .error{
->>>>>>> 72c2afd535a56781dfa5681555ab5575bd783de1
+
+  #error{
+
     background-color: pink; 
     padding: 5px; 
     border-width: 1px; 
@@ -59,19 +55,15 @@
 
   }
 
-<<<<<<< HEAD
-  #resultat {
-=======
-  .resultat{
->>>>>>> 72c2afd535a56781dfa5681555ab5575bd783de1
+
+  #resultat{
+
     background-color: green; 
     color: white; 
     padding: 5px; 
     border-width: 1px; 
     border-style: solid;
 
-<<<<<<< HEAD
+
   }
-=======
-  }
->>>>>>> 72c2afd535a56781dfa5681555ab5575bd783de1
+
