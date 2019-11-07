@@ -8,26 +8,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <!-- Place favicon.ico in the root directory -->          
+<style>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+  body{
+    background-color: #E6E6FA;              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;              
+}
+</style>
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+        <link rel="stylesheet" href="css.css">
+        <script type="text/javascript" src="formulaire.js"></script>
     </head>
     <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
+        <!--<h1>tp2</h1>
+         Add your site or application content here 
         <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <img src="../galilee.png" alt="Logo Galilee"/> -->
+
+
+    </br></br></br>
+<h1> Saisie d'une fiche "Personne"</h1>
+
+<form method="post">
+  <p><i>Complétez le formulaire. Les champs marqués par </i><em>*</em> sont <em>obligatoires</em></p>
+  <fieldset>
+    <legend>Contact</legend>
+
+ 
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" type="text" placeholder="Belaguid" autofocus="" required minlength="5" maxlength="20"><br>
+      <br>
+   
+      <label for="prenom">Prénom <em>*</em></label>
+      <input id="prenom" type="text" placeholder="Yasmine" autofocus="" required minlength="5" maxlength="20"><br>
+      <br>
+      <br>
+      <label for="date">Date de naissance<em>*</em></label>
+      <input id="date" type="date" autofocus="" required placeholder="JJ/MM/AAAA"><br>
+      <br><br>
+     
+      <label for="add">Adresse<em>*</em></label>
+      <input id="add" type="text" autofocus="" required required minlength="5" maxlength="50"><br>
+      <br>
+      <br><br>
+      <label for="email">Email <em>*</em></label>
+      <input id="email" type="email" placeholder="prénom.nom@univ-paris13.fr" required type="email" minlength="5" maxlength="30"><br>
+  </fieldset>
+
+
+  <input type="submit" value="Valider" onclick="validation()"> </input> <br><br>
+
+  <div id="error"> </div> 
+  <br> <br>
+  <div id="resultat"> </div> 
+  <br> <br>
+
+</form>
+
     </body>
 </html>
