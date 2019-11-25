@@ -18,7 +18,7 @@ $( document ).ready(function() {
         var nombreCaractere = $(this).val().length;
         
         var msg =   nombreCaractere + ' car.';
-        $('#compteur').text(msg);
+        $('#id').text(msg);
       
        })
 
@@ -28,7 +28,7 @@ $( document ).ready(function() {
         var nombreCaractere = $(this).val().length;
 
         var msg = nombreCaractere + ' car.';
-        $('#compteur1').text(msg);
+        $('#idd').text(msg);
 
     })
 
