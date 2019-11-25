@@ -44,8 +44,11 @@ $( document ).ready(function() {
         console.log(test);
 
         if (test) {
+
+
+            //contactStore.add(nom, prenom, date, add, email);
             
-             $(".modal-title").html("Bienvenue " + prenom.val());
+            $(".modal-title").html("Bienvenue " + prenom.val());
            
             $(".modal-body").html(" Vous êtes  nés le " + date.val()  
             + " et vous habitez : " + ''
