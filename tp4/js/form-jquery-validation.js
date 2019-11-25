@@ -3,8 +3,39 @@ $( document ).ready(function() {
 
     
     console.log("DOM ready!");
-  
+    
+    
+    $('#gps').click(function () {
+
+        $('#map').html(getLocation());
+    });
+
+   
+    $('#nom').keyup(function() {
+ 
+        // Le script qui devra calculer et afficher le nombre de caractères
+
+        var nombreCaractere = $(this).val().length;
+        
+        var msg =   nombreCaractere + ' car.';
+        $('#compteur').text(msg);
+      
+       })
+
+
+    $('#prenom').keyup(function () {
+
+        var nombreCaractere = $(this).val().length;
+
+        var msg = nombreCaractere + ' car.';
+        $('#compteur1').text(msg);
+
+    })
+
+
+
     var nom = $("#nom"); var prenom = $("#prenom"); var date = $("#date"); var add = $("#add"); var email = $("#email");
+
 
     $("#valider").on("click", (event) => {
 
@@ -33,5 +64,6 @@ $( document ).ready(function() {
     verifyInput = (nom, prenom, date, add, email) => {
         return nom == "" | prenom == "" | date == "" | add == "" | email == "";
     }
+
 
 });
